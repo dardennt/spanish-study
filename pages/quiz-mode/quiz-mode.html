@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="quiz-mode.css">
 </head>
 <body>
+<div id="timer" class="info">01:00</div>
+<div id="score" class="info">0/10</div>
 <div class="container">
-    <div id="timer">60</div>
-    <div id="score">0</div>
-    <div id="question"></div>
+    <div id="question" class="hidden"></div>
     <div class="input-container">
         <label for="answer"></label>
-        <input type="text" id="answer" placeholder="Votre réponse en espagnol">
+        <input type="text" id="answer" placeholder="Votre réponse en espagnol" class="hidden">
     </div>
     <div id="feedback"></div>
-    <button id="restart" type="button">Recommencer</button>
+    <button id="start" type="button">Démarrer</button>
 </div>
 <script src="quiz-mode.js"></script>
 </body>
