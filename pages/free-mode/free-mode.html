@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Traduction de conjugaisons</title>
+    <link rel="stylesheet" href="../../assets/css/common.css">
+    <link rel="stylesheet" href="free-mode.css">
+</head>
+<body>
+<div class="container">
+    <div id="question"></div>
+    <div class="input-container">
+        <label for="answer"></label>
+        <input type="text" id="answer" placeholder="Votre réponse en espagnol">
+        <button id="show-conjugations" type="button" class="help-button">?</button>
+    </div>
+    <div id="feedback"></div>
+    <div id="conjugations" class="hidden">
+        <div class="conjugation-column" id="french-conjugations">
+            <!-- Les conjugaisons françaises seront insérées ici -->
+        </div>
+        <div class="conjugation-column" id="spanish-conjugations">
+            <!-- Les conjugaisons espagnoles seront insérées ici -->
+        </div>
+    </div>
+</div>
+<script src="free-mode.js"></script>
+</body>
+</html>

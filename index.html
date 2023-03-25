@@ -2,32 +2,20 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Traduction de conjugaisons</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprentissage de l'espagnol</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <div class="container">
-    <div id="question"></div>
-    <div class="input-container">
-        <label for="answer"></label>
-        <input type="text" id="answer" placeholder="Votre réponse en espagnol">
-        <button id="show-conjugations" type="button" class="help-button">?</button>
-    </div>
-    <div id="feedback"></div>
-    <div id="conjugations" class="hidden">
-        <div class="conjugation-column" id="french-conjugations">
-            <!-- Les conjugaisons françaises seront insérées ici -->
-        </div>
-        <div class="conjugation-column" id="spanish-conjugations">
-            <!-- Les conjugaisons espagnoles seront insérées ici -->
-        </div>
+    <h1>EspagnoLingo</h1>
+    <p class="choose-mode-text">Choisissez un mode pour commencer :</p>
+    <div class="button-container">
+        <button id="free-mode">Mode libre</button>
+        <button id="quiz-mode">Mode quiz</button>
     </div>
 </div>
-<script src="assets/js/checkAnswer.js"></script>
-<script src="assets/js/display.js"></script>
-<script src="assets/js/eventListeners.js"></script>
-<script src="assets/js/fetchConjugations.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/utils.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
