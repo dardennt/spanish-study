@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Traduction de conjugaisons</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <div id="question"></div>
-        <input type="text" id="answer" placeholder="Votre réponse en espagnol" onkeydown="handleEnter(event)">
-        <div id="feedback"></div>
+<div class="container">
+    <div id="question"></div>
+    <label for="answer"></label><input type="text" id="answer" placeholder="Votre réponse en espagnol">
+    <div id="feedback"></div>
+    <div class="button-container">
+        <button id="show-conjugations" type="button">Afficher les conjugaisons</button>
     </div>
-    <script src="scripts.js"></script>
+    <div id="conjugations" class="hidden">
+        <div class="conjugation-column" id="french-conjugations">
+            <!-- Les conjugaisons françaises seront insérées ici -->
+        </div>
+        <div class="conjugation-column" id="spanish-conjugations">
+            <!-- Les conjugaisons espagnoles seront insérées ici -->
+        </div>
+    </div>
+</div>
+<script src="assets/js/checkAnswer.js"></script>
+<script src="assets/js/display.js"></script>
+<script src="assets/js/eventListeners.js"></script>
+<script src="assets/js/fetchConjugations.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/utils.js"></script>
 </body>
 </html>
