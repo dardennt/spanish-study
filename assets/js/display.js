@@ -47,14 +47,6 @@ function hideConjugationsHelp() {
         conjugationsDiv.classList.add('hidden');
     }
 }
-
-function displayConjugationsHelp() {
-    const conjugationsDiv = document.getElementById('conjugations');
-    if (conjugationsDiv.classList.contains('hidden')) {
-        conjugationsDiv.classList.remove('hidden');
-    }
-}
-
 function toggleConjugationsHelp() {
     const conjugationsDiv = document.getElementById('conjugations');
     if (conjugationsDiv.classList.contains('hidden')) {
