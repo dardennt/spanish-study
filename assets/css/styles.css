@@ -35,6 +35,12 @@ h1 {
 	color: #444;
 }
 
+.input-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 #answer {
 	font-size: 1.2em;
 	width: 100%;
@@ -63,9 +69,25 @@ h1 {
 	color: #dc3545;
 }
 
-.button-container {
-	text-align: center;
-	margin-bottom: 20px;
+.help-button {
+	font-size: 1.2rem;
+	background-color: #2a5bcc;
+	color: #ffffff;
+	padding: 8px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-left: 10px;
+}
+
+.help-button:hover {
+	background-color: #4c7cd6;
 }
 
 #show-conjugations {

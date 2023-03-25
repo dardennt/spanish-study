@@ -8,11 +8,12 @@
 <body>
 <div class="container">
     <div id="question"></div>
-    <label for="answer"></label><input type="text" id="answer" placeholder="Votre réponse en espagnol">
-    <div id="feedback"></div>
-    <div class="button-container">
-        <button id="show-conjugations" type="button">Afficher les conjugaisons</button>
+    <div class="input-container">
+        <label for="answer"></label>
+        <input type="text" id="answer" placeholder="Votre réponse en espagnol">
+        <button id="show-conjugations" type="button" class="help-button">?</button>
     </div>
+    <div id="feedback"></div>
     <div id="conjugations" class="hidden">
         <div class="conjugation-column" id="french-conjugations">
             <!-- Les conjugaisons françaises seront insérées ici -->
